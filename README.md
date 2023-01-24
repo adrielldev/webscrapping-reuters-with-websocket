@@ -11,23 +11,26 @@ Também foi incluído um sistema de notificações por som a cada mudança que a
 do https://reuters.com/markets/currencies.
 
 ## Como usar a aplicação:
+
 Precisaremos de 3 terminais para rodar a aplicação.
+
+### Conectando database e instalando pacotes
 
 1o  git clone git@github.com:adrielldev/webscrapping-reuters-with-websocket.git <br>
 1o  cd webscrapping-reuters-with-websocket/ <br>
+1o  npm i
 1o  docker-compose up 
 
-### Database conectada.
 
-2o  cd ./server && npm i && node ./index.js
+### Iniciando Serrvidor com Websocket
 
-### Instalação dos pacotes do servidor e o ligando
+2o  node ./server/index.js
 
-3o cd ./scrapping && npm i && node ./scrap.js
+### Iniciando Webscrapping
 
-### Instalação dos pacotes do WebScrapping e o ativando
+3o node ./scrap.js
 
 Depois destes passos basta apenas consumirmos nossa aplicação no front-end. <br>
-cd ./frontend && code . Em outro terminal <br>
-No vscode use a extensão Liveserver para testar a aplicação
+Em outro terminal cd ./frontend && code .  <br>
+Use a extensão Liveserver no arquivo index.html para testar a aplicação.
 
