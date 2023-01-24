@@ -27,5 +27,7 @@ Precisaremos de 3 terminais para rodar a aplicação.
 
 ### Instalação dos pacotes do WebScrapping e o ativando
 
-Depois destes passos vá em ./frontend/index.html e use uma extensão comum do VSCode como o Liveserver para testar a aplicação.
+Depois destes passos basta apenas consumirmos nossa aplicação no front-end. <br>
+cd ./frontend && code . <br>
+No vscode use a extensão Liveserver para testar a aplicação
 
