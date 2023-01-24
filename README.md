@@ -28,6 +28,6 @@ Precisaremos de 3 terminais para rodar a aplicação.
 ### Instalação dos pacotes do WebScrapping e o ativando
 
 Depois destes passos basta apenas consumirmos nossa aplicação no front-end. <br>
-cd ./frontend && code . <br>
+cd ./frontend && code . Em outro terminal <br>
 No vscode use a extensão Liveserver para testar a aplicação
 
