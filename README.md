@@ -7,8 +7,7 @@ Database utilizada foi um postgres rodando em um Container.
 
 O webscrapping é feito diretamente na api do reuters que a aplicação consome no seu front-end, o que economiza muito tempo no webscrapping.
 
-Também foi incluído um sistema de notificações por som a cada mudança que acontece.
- A aplicação está consumindo a notícia mais recente do feed de notícias
+Também foi incluído um sistema de notificações por som a cada mudança que acontece. A aplicação está consumindo a notícia mais recente do feed de notícias
 do https://reuters.com/markets/currencies.
 
 ## Como usar a aplicação:
@@ -19,13 +18,13 @@ Precisaremos de 3 terminais para rodar a aplicação.
 
 -- Database conectada.
 
-2o => node./server/index.js 
+2o => cd ./server/index.js && npm i && node ./index.js
 
--- Servidor com websocket Ligado
+-- Instalação dos pacotes do servidor e o ligando
 
-3o => node ./scrapping/scrap.js
+3o => cd ./scrapping/scrap.js && npm i && node ./scrap.js
 
--- Ativando o Webscrapping
+-- Instalação dos pacotes do WebScrapping e o ativando
 
 Depois destes passos vá em ./frontend/index.html e use uma extensão comum do VSCode como o LiveServer para testar a aplicação.
 
