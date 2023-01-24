@@ -19,11 +19,11 @@ Precisaremos de 3 terminais para rodar a aplicação.
 
 ### Database conectada.
 
-2o  cd ./server/index.js && npm i && node ./index.js
+2o  cd ./server && npm i && node ./index.js
 
 ### Instalação dos pacotes do servidor e o ligando
 
-3o cd ./scrapping/scrap.js && npm i && node ./scrap.js
+3o cd ./scrapping && npm i && node ./scrap.js
 
 ### Instalação dos pacotes do WebScrapping e o ativando
 
