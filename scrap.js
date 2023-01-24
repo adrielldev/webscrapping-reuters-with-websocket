@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer')
 const { Client } = require('pg');
-const db = require('../server/db');
+const db = require('./server/db');
 
 
 const getData = async () => {
