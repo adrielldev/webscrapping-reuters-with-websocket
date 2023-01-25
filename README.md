@@ -5,13 +5,11 @@ Webscrapping com Puppetteer <br>
 WebSockets usando Socket.io <br>
 Database utilizada foi um postgres rodando em um Container.
 
-O webscrapping é feito diretamente na api do reuters que a aplicação consome no seu front-end, o que economiza muito tempo no webscrapping.
-
 Também foi incluído um sistema de notificações por som, se o usuário desejar ser notificado a cada mudança que acontece. A aplicação está consumindo a notícia mais recente do feed de notícias do https://reuters.com/markets/currencies.
 
-## Como usar a aplicação:
+## Como usar a aplicação localmente:
 
-Precisaremos de 3 terminais para rodar a aplicação.
+Precisaremos de 2 terminais para rodar a aplicação.
 
 ### 1 Conectando database e instalando pacotes
 
@@ -26,15 +24,10 @@ Precisaremos de 3 terminais para rodar a aplicação.
 
 - 2.1  node ./server/index.js
 
-### 3 Iniciando Webscrapping
+### 3 Consumindo no Front
 
-- 3.0 Abrir outra guia do terminal no root
-- 3.1 node ./scrap.js
-
-### 4 Consumindo no Front
-
-- 4.0 Em outro shell digite cd ./frontend && code .
-- 4.1 Usar extensão Liveserver no arquivo index.html
+- 3.0 Em outro shell digite cd ./frontend && code .
+- 3.1 Usar extensão Liveserver no arquivo index.html
 
 ## Uma imagem da aplicação 
 <img src='./app.png'/>
