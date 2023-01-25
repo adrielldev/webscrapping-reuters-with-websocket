@@ -1,7 +1,7 @@
 # webscrapping-reuters-with-websocket
 Aplicação desenvolvida para o Teste Técnico da Axia Futures. 
 
-Webscrapping Puppetteer <br>
+Webscrapping com Puppetteer <br>
 WebSockets usando Socket.io <br>
 Database utilizada foi um postgres rodando em um Container.
 
