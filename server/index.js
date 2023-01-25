@@ -4,6 +4,9 @@ const server = require('http').Server(app);
 const db = require('./db');
 const scrapData = require('./scrap')
 
+
+app.use(express.static(__dirname + '/public'));
+
 const io = require('socket.io')(server, {
   cors: { origin: '*' }
 });

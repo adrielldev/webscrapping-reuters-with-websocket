@@ -11,7 +11,7 @@ const client = new Client({
 client.connect()
   .then(() => {
     return client.query(`CREATE TABLE IF NOT EXISTS scrap(
-      id SERIAL PRIMARY KEY,
+      id BIGSERIAL PRIMARY KEY,
       title VARCHAR(255) NOT NULL,
       time VARCHAR(100) NOT NULL,
       link VARCHAR(255) NOT NULL,
