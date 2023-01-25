@@ -32,7 +32,11 @@ Precisaremos de 3 terminais para rodar a aplicação.
 - 3.0 Abrir outra guia do terminal no root
 - 3.1 node ./scrap.js
 
-Depois destes passos basta apenas consumirmos nossa aplicação no front-end. <br>
-Em outro terminal cd ./frontend && code .  <br>
-Use a extensão Liveserver no arquivo index.html para testar a aplicação.
+### 4 Consumindo no Front
+
+- 4.0 Em outro shell digite cd ./frontend && code .
+- 4.1 Usar extensão Liveserver no arquivo index.html
+
+## Uma imagem da aplicação 
+<img src='./app.png'/>
 
