@@ -16,19 +16,20 @@ Precisaremos de 3 terminais para rodar a aplicação.
 
 ### Conectando database e instalando pacotes
 
-1o  git clone git@github.com:adrielldev/webscrapping-reuters-with-websocket.git <br>
-1o  cd webscrapping-reuters-with-websocket/ <br>
-1o  npm i <br>
-1o  docker-compose up 
+
+1.1  git clone git@github.com:adrielldev/webscrapping-reuters-with-websocket.git <br>
+1.2  cd webscrapping-reuters-with-websocket/ <br>
+1.3  npm i <br>
+1.4  docker-compose up -d
 
 
 ### Iniciando Serrvidor com Websocket
 
-2o  node ./server/index.js
+2.1  node ./server/index.js
 
 ### Iniciando Webscrapping
 
-3o node ./scrap.js
+3.1 node ./scrap.js
 
 Depois destes passos basta apenas consumirmos nossa aplicação no front-end. <br>
 Em outro terminal cd ./frontend && code .  <br>
