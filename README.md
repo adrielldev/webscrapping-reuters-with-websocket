@@ -7,8 +7,7 @@ Database utilizada foi um postgres rodando em um Container.
 
 O webscrapping é feito diretamente na api do reuters que a aplicação consome no seu front-end, o que economiza muito tempo no webscrapping.
 
-Também foi incluído um sistema de notificações por som a cada mudança que acontece. A aplicação está consumindo a notícia mais recente do feed de notícias
-do https://reuters.com/markets/currencies.
+Também foi incluído um sistema de notificações por som, se o usuário desejar ser notificado a cada mudança que acontece. A aplicação está consumindo a notícia mais recente do feed de notícias do https://reuters.com/markets/currencies.
 
 ## Como usar a aplicação:
 
