@@ -14,7 +14,7 @@ do https://reuters.com/markets/currencies.
 
 Precisaremos de 3 terminais para rodar a aplicação.
 
-### Conectando database e instalando pacotes
+### 1 Conectando database e instalando pacotes
 
 
 1.1  git clone git@github.com:adrielldev/webscrapping-reuters-with-websocket.git <br>
@@ -23,11 +23,11 @@ Precisaremos de 3 terminais para rodar a aplicação.
 1.4  docker-compose up -d
 
 
-### Iniciando Serrvidor com Websocket
+###  2 Iniciando Serrvidor com Websocket
 
 2.1  node ./server/index.js
 
-### Iniciando Webscrapping
+### 3 Iniciando Webscrapping
 
 3.1 node ./scrap.js
 
