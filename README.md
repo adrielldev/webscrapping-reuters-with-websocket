@@ -29,6 +29,7 @@ Precisaremos de 3 terminais para rodar a aplicação.
 
 ### 3 Iniciando Webscrapping
 
+- 3.0 Abrir outra guia do terminal no root
 - 3.1 node ./scrap.js
 
 Depois destes passos basta apenas consumirmos nossa aplicação no front-end. <br>
