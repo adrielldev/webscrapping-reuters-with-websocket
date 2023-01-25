@@ -27,6 +27,7 @@ server.listen(3000, () => {
   console.log('Server listening on port 3000');
 });
 
+
 setInterval(async ()=>{
  await scrapData()
-},3000);
+},5000);
