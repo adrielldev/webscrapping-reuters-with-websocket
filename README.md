@@ -18,7 +18,7 @@ Precisaremos de 3 terminais para rodar a aplicação.
 
 1o  git clone git@github.com:adrielldev/webscrapping-reuters-with-websocket.git <br>
 1o  cd webscrapping-reuters-with-websocket/ <br>
-1o  npm i
+1o  npm i <br>
 1o  docker-compose up 
 
 
