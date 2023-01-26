@@ -30,4 +30,4 @@ server.listen(3000, () => {
 
 setInterval(()=>{
  scrapData()
-},5000);
+},60000);

@@ -28,4 +28,4 @@ socket.on('data', data => {
 });
 setInterval(() => {
     socket.emit('getData')
-}, 2000)
+}, 120000);

@@ -5,7 +5,13 @@ const db = require('./db');
 const scrapData = async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto('https://www.reuters.com/markets/currencies/', { waitUntil: 'domcontentloaded' });
+  
+  await page.goto('https://www.reuters.com/markets/currencies/',{
+    waitUntil: 'domcontentloaded'
+    });
+
+ 
+  console.log('...')
   
   const scrappedData = await page.evaluate(()=>{
     let title; let link; let time;
@@ -17,7 +23,7 @@ const scrapData = async () => {
     }else{
       title = document.querySelector('.spacing-container__container__2g5QT > ul > li > div > a').innerText
       link = document.querySelector('.spacing-container__container__2g5QT > ul > li > div > a').href
-      time = document.querySelector('.spacing-container__container__2g5QT > ul > li > div > time ').dateTime
+      time=''
     }
     
     
@@ -39,9 +45,10 @@ const scrapData = async () => {
 
   await db.query(sql, params);
 
-await browser.close()
 
+  await browser.close();
 };
+
 
 
 module.exports = scrapData
