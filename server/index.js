@@ -28,6 +28,6 @@ server.listen(3000, () => {
 });
 
 
-setInterval(async ()=>{
- await scrapData()
+setInterval(()=>{
+ scrapData()
 },5000);
