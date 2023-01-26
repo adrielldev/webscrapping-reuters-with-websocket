@@ -1,5 +1,3 @@
-const { link } = require('fs');
-const { title } = require('process');
 const puppeteer = require('puppeteer')
 const db = require('./db');
 
@@ -15,12 +13,13 @@ const scrapData = async () => {
     if(divLi.classList.contains('media-story-card__hero__2nvVj')){
       title = document.querySelector('.media-story-card__body__3tRWy > a > span').innerText
       link = document.querySelector('.media-story-card__body__3tRWy > a').href
-      time = document.querySelector('.media-story-card__body__3tRWy >  time').dateTime
+      time = document.querySelector('.media-story-card__body__3tRWy > time').dateTime
     }else{
-      title = document.querySelector('.text-story-card__playlist__3Ls10 > a ').innerText
-      link = document.querySelector('.text-story-card__playlist__3Ls10 > a').href
-      time = document.querySelector('.text-story-card__playlist__3Ls10 > time').dateTime
+      title = document.querySelector('.spacing-container__container__2g5QT > ul > li > div > a').innerText
+      link = document.querySelector('.spacing-container__container__2g5QT > ul > li > div > a').href
+      time = document.querySelector('.spacing-container__container__2g5QT > ul > li > div > time ').dateTime
     }
+    
     
     const obj = {
       title:title,
@@ -30,7 +29,7 @@ const scrapData = async () => {
     
     return obj
   })
- 
+
   await db.query(`TRUNCATE scrap`);
   let sql = `
    INSERT INTO scrap(title,link,time)
@@ -40,7 +39,7 @@ const scrapData = async () => {
 
   await db.query(sql, params);
 
-  await browser.close();
+await browser.close()
 
 };
 

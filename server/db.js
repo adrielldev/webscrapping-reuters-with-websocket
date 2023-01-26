@@ -14,7 +14,7 @@ client.connect()
       id BIGSERIAL PRIMARY KEY,
       title VARCHAR(255) NOT NULL,
       time VARCHAR(100) NOT NULL,
-      link VARCHAR(255) NOT NULL UNIQUE
+      link VARCHAR(255) NOT NULL
     )`);
   })
   .catch(err => {
