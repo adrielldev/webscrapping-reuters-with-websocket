@@ -24,10 +24,8 @@ Precisaremos de 2 terminais para rodar a aplicação.
 
 - 2.1  node ./server/index.js
 
-### 3 Consumindo no Front
-
-- 3.0 Em outro shell digite cd ./frontend && code .
-- 3.1 Usar extensão Liveserver no arquivo index.html
+### 3 Acessando
+- 3.0 Vá para http://localhost:3000
 
 ## Uma imagem da aplicação 
 <img src='./app.png'/>
